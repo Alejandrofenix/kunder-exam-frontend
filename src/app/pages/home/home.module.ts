@@ -3,13 +3,15 @@ import { NgModule } from '@angular/core';
 
 import { HomePageRoutingModule } from './home-routing.module';
 import { HomePageComponent } from './home.component';
+import { BannerComponent } from '../../components/banner/banner.component';
 
 
 @NgModule({
   imports: [
-    HomePageRoutingModule
+    HomePageRoutingModule,
+    CommonModule      
   ],
-  declarations: [HomePageComponent],
+  declarations: [HomePageComponent, BannerComponent],
   providers: []
 })
 export class HomePageModule { }
