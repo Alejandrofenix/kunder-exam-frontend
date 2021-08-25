@@ -1,0 +1,126 @@
+
+img {
+ width: 100%;
+ height: 100%;
+ object-fit: scale-down;
+}
+ 
+.banner {
+
+ height:90%;
+ width:100%; 
+
+  background-image: url('~assets/imgs/bg-banner.jpg');
+  background-repeat: no-repeat;
+  background-size: 100% 150%;
+  
+  background-repeat: no-repeat;
+  background-size: 100% 150%;
+  
+ height:100%;
+ width:100%; 
+ 
+
+}
+
+
+#left-column {
+ float: left;
+ border: 1px;
+ width: 70%;
+ height:100%;
+ background-color: rgba(240, 252, 242, .2);
+
+ 
+}
+
+.text {
+
+ overflow: hidden; 
+ word-wrap: break-word;
+ font-family: 'Dancing Script', cursive;
+
+ .text-name{
+ 
+   text-align: center;
+  
+  
+ }
+ .description{
+ 
+  text-align: center;
+  overflow: hidden; 
+  word-wrap: break-word;
+ }
+  .descriptionPlan{
+   position: absolute;
+   padding: 5%;
+   width: 60%;
+   height:100%;
+   text-align: justify;
+   
+  }
+
+ 
+
+}
+
+.button {
+ background-color: #4CAF50; /* Green */
+ border: none;
+ color: white;
+ padding: 30px 30px;
+ text-align: center;
+ text-decoration: none;
+ display: inline-block;
+ font-size: 16px;
+
+ cursor: pointer;
+ background-color: rgba(240, 252, 242, .3); 
+ color: rgba(37, 36, 37, 1); 
+ 
+ transition-duration: 0.4s;
+ border-radius: 30px;
+ margin: 0;
+ position: absolute;
+ top: 50%;
+ -ms-transform: translateY(-50%);
+ transform: translateY(-50%);
+
+
+}
+
+.button:hover {
+ background-color:  rgba(240, 252, 242, .5); /* Green */
+ color: white;
+}
+
+#right-column {
+
+ float: left;
+ width: 30%;
+ height:100%;
+ align-content: center;
+  background-color: rgba(240, 252, 242, .2);
+
+ display: block;
+}
+
+
+@media only screen and (max-width: 700px) {
+ .button {
+  padding: 10px 10px;
+  font-size: 100%;
+  
+ }
+.text{
+ height: 100%;
+ font-size: 2ex;
+ margin: auto;
+
+
+
+}
+
+
+}

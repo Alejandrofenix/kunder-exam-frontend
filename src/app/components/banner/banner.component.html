@@ -1,0 +1,22 @@
+<div class="banner" *ngIf="showBanner">
+  <div class="banner" [style.background-image]="isPlan ? 'url(' + product.product.backgroundImg + ')' : 'url(' + bgDefault + ')'">
+
+  <div id="left-column" >
+   <div class="text">
+    <h1 class="text-name" *ngIf="!isPlan">{{product.product.productName}}</h1>
+   
+    <p  [class]="{description: !isPlan, descriptionPlan: isPlan}">{{product.product.productDescription}}</p>
+   
+   </div>
+   
+  </div>
+ 
+  <div id="right-column">
+   <img  [src]="product.product.productImg" *ngIf="!isPlan">
+   
+    <button (click)="goToLink()" class="button hover" *ngIf="isPlan">{{product.product.buttonText}}</button>
+  
+  </div>
+ </div>
+</div>
+
